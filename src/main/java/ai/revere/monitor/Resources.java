@@ -41,29 +41,8 @@ public class Resources {
 		}
 	}
 
+	public static String getAwsAccessCredentialsFilePath() {
+		return System.getProperty(getGroupId() + ".aws.properties");
+	}
 
-	/*
-	 * Receiving secret key for encryption
-	 *
-	 * @return secret key or null if not defined
-	 */
-	public static String getSecretKey() {
-		try {
-			return System.getProperty(getGroupId() + ".aes.key");
-		} catch (Exception e) {
-			return null;
-		}
-	}
-	/*
-	 * Receiving iv for encryption
-	 *
-	 * @return iv or null if not defined
-	 */
-	public static String getIV() {
-		try {
-		  return System.getProperty(getGroupId() + ".aes.iv");
-		} catch (Exception e) {
-			return null;
-		}
-	}
 }
