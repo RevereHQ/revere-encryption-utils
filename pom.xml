@@ -8,11 +8,11 @@
 		<url>http://revere.ai</url>
 	</organization>
 
-	<groupId>ai.revere.monitor</groupId>
-	<artifactId>revere-monitor</artifactId>
+	<groupId>ai.revere.monitor.utils</groupId>
+	<artifactId>cryptUtils</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-	<name>Revere Monitor Encryption Utils</name>
+	<name>cryptUtils</name>
 
 	<!-- Updated for Wildfly 10 -->
 
@@ -36,55 +36,13 @@
         <maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Define the version of JBoss' Java EE 7 APIs we want to use -->
-            <!-- JBoss distributes a complete set of Java EE 7 APIs including
-                a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or
-                a collection) of artifacts. We use this here so that we always get the correct
-                versions of artifacts. Here we use the jboss-javaee-7.0 stack (you can
-                read this as the JBoss stack of the Java EE 7 APIs). You can actually
-                use this stack with any version of WildFly that implements Java EE 7, not
-                just WildFly 8! -->
-            <dependency>
-                <groupId>org.jboss.spec</groupId>
-                <artifactId>jboss-javaee-7.0</artifactId>
-                <version>${version.jboss.spec.javaee.7.0}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
- 			<!-- AWS SDK -->
-			<dependency>
-				<groupId>com.amazonaws</groupId>
-				<artifactId>aws-java-sdk-bom</artifactId>
-				<version>1.11.155</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-       </dependencies>
-    </dependencyManagement>
 
 	<dependencies>
-        <!-- Import the CDI API, we use provided scope as the API is included in JBoss WildFly -->
-        <dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
 
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
-        </dependency>
-
-		<!-- DynamoDB dependency-->
-
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk</artifactId>
-            <version>1.11.313</version>
         </dependency>
 
 		<dependency>
