@@ -6,4 +6,15 @@
   <artifactId>cryptUtils</artifactId>
   <version>1.0.0</version>
   <description>POM was created from install:install-file</description>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.9</version>
+    </dependency>
+
+  </dependencies>
+
 </project>
