@@ -1,4 +1,7 @@
 # revere-encryption-utils
+
+Created by Andrew Stanton VP Engineering @ Revere
+
 This is a packaged jar file that compiles the class CryptUtils.java in a jar file.  It gives you the ability to encrypt and decrypt using AES encryption.
 
 Since github no longer supports downloading binary files the mvn jar repo is available here:
