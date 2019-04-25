@@ -23,7 +23,7 @@ Including in a maven pom.xml:
 			<version>1.0.0</version>
 		</dependency>
 
-3. To use this effectively you will need to create a config.properties file that caontains the public and private keys used for the encryption, with the values aes.key and aes.iv respectively.  You will need to put these files in the main/src/properties in the maven project you are building (if you want to test it also you will need to copy to the test/resources section as well.  
+3. To use this effectively you will need to create a config.properties file that contains the public and private keys used for the encryption, with the values aes.key and aes.iv respectively.  You will need to put these files in the main/src/properties folder in the maven project you are building.  If you want to test it also you will need to copy to the test/resources section as well.  Example CryptUtilsTest.java is used here but it is not compiled into the jar file.
 
 The config.properties would look like this:
 
