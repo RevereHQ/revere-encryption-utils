@@ -28,4 +28,5 @@ Including in a maven pom.xml:
 The config.properties would look like this:
 
 aes.key=abc..
+
 aes.iv=abc..
