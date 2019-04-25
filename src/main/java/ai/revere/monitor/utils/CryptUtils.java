@@ -13,7 +13,7 @@ import static org.apache.commons.codec.binary.Base64.encodeBase64String;
 
 public class CryptUtils {
 
-		private static final Logger cryptUtilsLogger  = Logger.getLogger(CryptUtils.class.getName());
+		protected static final Logger cryptUtilsLogger  = Logger.getLogger(CryptUtils.class.getName());
 		private static final String CIPHER_TYPE = "AES/CBC/PKCS5PADDING";
 
 		private static Properties props;
