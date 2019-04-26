@@ -41,5 +41,6 @@ aes.iv=abc..
 4. An example of how to use different key, iv combinations is shown in the CryptUtilsTest.java class.  
 
 The aes.key should be 16, 24 or 32 bytes long
+
 The aes.iv should be 16 bytes long.
 
