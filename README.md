@@ -1,8 +1,12 @@
 # revere-encryption-utils
 
-Created by Andrew Stanton VP Engineering @ Revere
+Created by Andrew Stanton VP Engineering @ Revere, for Java 8 packages.
 
-This is a packaged jar file that compiles the class CryptUtils.java in a jar file.  It gives you the ability to encrypt and decrypt using AES encryption.
+This is a packaged jar file that compiles the class CryptUtils.java in a jar file.  It gives you the ability to encrypt and decrypt using AES encryption.  
+
+NOTE: You will need to use the Unlimited Strength Java(TM) Cryptography Extension Policy Files from sun to enable the AES CIPHER correctly.  The policy files only control the level of encryption.  They do not do the encryption themselves.
+
+You can find details here: https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
 
 Since github no longer supports downloading binary files the mvn jar repo is available here:
 
